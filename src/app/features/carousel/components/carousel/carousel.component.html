@@ -1,19 +1,13 @@
-<nav class="d-flex">
-  <div *ngIf="!hideNav" class="control d-flex align-items-center justify-content-center mousePointer" (mousedown)="left()"
-  (click)="scrollLeft()" (mouseup)="clear()">
-    <div class="prev" [ngClass]="{'opacity': !leftArrowHide}">
-      left
-    </div>
-  </div>
-  <div [ngClass]="!hideNav ? 'items-wrapper' : 'w-100'">
-    <div id="list-items" #hScroll carousel (scrolled)="listenToItemsScroll($event)">
+<div class="carousel">
+  <button class="carousel__button carousel__button--left" *ngIf="!leftArrowHide" (click)="scrollLeft()">
+    <mat-icon svgIcon="arrow-left" class="carousel__icon"></mat-icon>
+  </button>
+
+   <div id="list-items" #scrollWrapper carousel (scrolled)="listenToItemsScroll($event)" class="carousel__items">
       <ng-content></ng-content>
     </div>
-  </div>
-  <div *ngIf="!hideNav" class="control d-flex justify-content-center align-items-center mousePointer"
-  (click)="scrollRight()" (mousedown)="right()" (mouseup)="clear()">
-    <div class="next rotate-right" [ngClass]="{'opacity': !rightArrow}">
-      right
-    </div>
-  </div>
-</nav>
+
+  <button class="carousel__button carousel__button--right" *ngIf="!rightArrow" (click)="scrollRight()">
+    <mat-icon svgIcon="arrow-right" class="carousel__icon"></mat-icon>
+  </button>
+</div>

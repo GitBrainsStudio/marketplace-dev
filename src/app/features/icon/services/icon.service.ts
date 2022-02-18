@@ -8,7 +8,9 @@ import { APP_URL } from "src/environments/environment";
 })
 export class IconService {
     private _icons: string[] = [
-        'star'
+        'star',
+        'arrow-left',
+        'arrow-right'
     ];
 
     constructor(private matIconRegistry: MatIconRegistry,

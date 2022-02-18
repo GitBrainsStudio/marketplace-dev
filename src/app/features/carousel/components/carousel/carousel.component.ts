@@ -13,13 +13,13 @@ export class CarouselComponent implements OnInit {
   @Input() text: string = '';
   @Input() hideNav = false;
   @Input() navIcon: any;
-  @Input() distance = 50;
+  @Input() distance = 300;
   @Input() scrollSpeed = 100;
 
   leftArrowHide = true;
   rightArrow = false;
 
-  @ViewChild('hScroll', { static: false }) scrollWrapper: ElementRef | undefined;
+  @ViewChild('scrollWrapper', { static: false }) scrollWrapper: ElementRef | undefined;
 
   interval: any;
 
