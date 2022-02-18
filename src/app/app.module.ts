@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselModule } from './features/carousel/carousel.module';
 import { MaterialModule } from './features/material/material.module';
+import { ProductModule } from './features/product/product.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MaterialModule } from './features/material/material.module';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    MaterialModule
+    MaterialModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
