@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { CarouselScrollEvent } from '../models/carousel-scroll-event.model';
 
 @Component({
@@ -41,8 +41,8 @@ export class CarouselComponent implements OnInit {
   }
 
   scrollLeft(): void {
-    const leftArrow = document.getElementById('list-items');
-    const scrollLeft = leftArrow!.scrollLeft;
+    const listWrapper = this.scrollWrapper?.nativeElement;
+    const scrollLeft = listWrapper!.scrollLeft;
     const distance = scrollLeft - this.distance;
     this.scroll(distance);
   }
@@ -53,7 +53,7 @@ export class CarouselComponent implements OnInit {
   }
 
   scrollRight(): void {
-    const listWrapper = document.getElementById('list-items');
+    const listWrapper = this.scrollWrapper?.nativeElement;
     const scrollLeft = listWrapper!.scrollLeft;
     const distance = scrollLeft + this.distance;
     this.scroll(distance);
@@ -65,7 +65,7 @@ export class CarouselComponent implements OnInit {
   }
 
   scroll(distance:any): void {
-    const listWrapper = document.getElementById('list-items');
+    const listWrapper = this.scrollWrapper?.nativeElement;
     listWrapper!.scrollTo({ behavior: 'smooth', left: distance });
   }
 

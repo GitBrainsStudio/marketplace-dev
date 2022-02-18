@@ -8,20 +8,20 @@
 }
 
 .carousel::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .carousel__items::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .carousel__items
 {
-  display: flex;
-  flex-direction: row;
-  overflow: auto;
-  margin-right: 15px;
-  margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 ::ng-deep .carousel__item:not(:last-child)
