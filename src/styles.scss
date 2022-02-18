@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root
+{
+    --box-shadow-light: rgba(0,0,0,0.108);
+    --box-shadow-medium: rgba(0,0,0,0.132);
+    --box-shadow-heavy: rgba(0,0,0,0.18);
+    --font-sans-serif: "PT Sans",sans-serif;
+    --font-monospace: "PT Mono",monospace;
+    --prism-background: #272822;
+    --red: #a03000;
+    --blue: #0064a8;
+    --dark-blue : #4c6491;
+    --white: #fff;
+    --black: #000;
+    --dark: #1e1e1e;
+    --light: #cfcfcf;
+    --green-light: #97a0eb;
+    --aqua : #88bbdd;
+    --yellow : #dda44f;
+    --black-main: #212529;
+    --gray-sticky : rgba(242, 242, 242, 1);
+}
+
+body 
+{
+    margin: 0;
+    font-family: var(--font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black-main);
+    background-color: var(--gray-sticky);
+}
