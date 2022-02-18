@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselModule } from './features/carousel/carousel.module';
+import { MaterialModule } from './features/material/material.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CarouselModule } from './features/carousel/carousel.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
