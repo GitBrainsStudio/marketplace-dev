@@ -10,7 +10,10 @@ export class IconService {
     private _icons: string[] = [
         'star',
         'arrow-left',
-        'arrow-right'
+        'arrow-right',
+        'catalog',
+        'profile',
+        'basket'
     ];
 
     constructor(private matIconRegistry: MatIconRegistry,

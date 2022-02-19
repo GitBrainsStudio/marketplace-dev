@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselModule } from './features/carousel/carousel.module';
+import { HeaderModule } from './features/header/header.module';
 import { MaterialModule } from './features/material/material.module';
 import { ProductModule } from './features/product/product.module';
 
@@ -18,7 +19,8 @@ import { ProductModule } from './features/product/product.module';
     CarouselModule,
     MaterialModule,
     ProductModule,
-    HttpClientModule
+    HttpClientModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
