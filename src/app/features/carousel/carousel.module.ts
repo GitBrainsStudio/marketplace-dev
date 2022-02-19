@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from '../material/material.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { CarouselDirective } from './components/directives/carousel.directive';
+import { CarouselDirective } from './directives/carousel.directive';
 
 @NgModule({
   declarations: [

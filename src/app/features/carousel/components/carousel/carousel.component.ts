@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { CarouselScrollEvent } from '../models/carousel-scroll-event.model';
+import { CarouselScrollEvent } from '../../models/carousel-scroll-event.model';
 
 @Component({
   selector: 'app-carousel',
