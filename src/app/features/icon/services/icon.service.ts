@@ -13,7 +13,8 @@ export class IconService {
         'arrow-right',
         'catalog',
         'profile',
-        'basket'
+        'basket',
+        'search'
     ];
 
     constructor(private matIconRegistry: MatIconRegistry,
