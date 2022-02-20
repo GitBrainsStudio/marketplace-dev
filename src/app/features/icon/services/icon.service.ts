@@ -14,7 +14,8 @@ export class IconService {
         'catalog',
         'profile',
         'basket',
-        'search'
+        'search',
+        'phone'
     ];
 
     constructor(private matIconRegistry: MatIconRegistry,

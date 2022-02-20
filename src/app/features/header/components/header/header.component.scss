@@ -2,11 +2,59 @@
 {
     display: flex;
     background-color: var(--white);
-    padding: 10px 30px 10px 30px;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.header__catalog
+.header__navbar
+{
+    display: flex;
+    padding: 5px 45px 5px 45px;
+}
+
+.header__navbar--top
+{
+    background-color: #333;
+}
+
+.navbar__item--top
+{
+    color: var(--white);
+    transition: .3s;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+.navbar__item--top:hover
+{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .3s;
+}
+
+.navbar__separator
+{
+    flex-grow: 1;
+}
+
+.header__navbar--middle
+{
+    padding: 20px 45px 20px 45px;
+}
+
+.header__carousel
+{
+    padding: 10px 30px 10px 30px;
+}
+
+
+.navbar__catalog
 {
     display: flex;
     flex-direction: row;
@@ -18,7 +66,8 @@
     flex-direction: row;
 }
 
-.catalog__button
+
+.navbar__catalog
 {
     display: flex;
     align-items: center;
@@ -59,7 +108,7 @@
     border-bottom: 1px rgba(51, 51, 51, 0.1) solid;
 }
 
-.header__button
+.navbar__button
 {
     border: none;
     background-color: transparent;
@@ -70,30 +119,30 @@
     transition: .8s;
 }
 
-.header__button:hover
+.navbar__button:hover
 {
     cursor: pointer;
     opacity: 0.5;
     transition: .8s;
 }
 
-.header__icon
+.button__icon
 {
     width: 18px;
     height: 18px;
 }
 
-.header__text
+.button__text
 {
     font-size: 14px;
     margin-top: 5px;
 }
 
-.header__search
+.navbar__search
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    flex-grow: 1;
     border-radius: 5px;
     border: 1px rgba(51, 51, 51, 0.1) solid;
     outline: 0;
@@ -109,8 +158,39 @@
     font-size: 16px;
 }
 
-.header__search:focus-within,
-.header__search:hover
+.carousel__link
 {
-    border: 1px rgba(51, 51, 51, 0.6) solid;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transition: .8s;
+}
+
+.carousel__link:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+.carousel__link:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .8s;
+}
+
+.navbar__phone
+{
+    display: flex;
+    align-items: center;
+}
+
+.phone__icon
+{
+    display: inline-flex;
+    fill: var(--white);
+}
+
+.phone__text
+{
+    margin-left: 5px;
 }

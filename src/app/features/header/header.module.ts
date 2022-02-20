@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from '../carousel/carousel.module';
 import { MaterialModule } from '../material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -9,7 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    CarouselModule
   ],
   exports: [
     HeaderComponent
