@@ -35,8 +35,8 @@
 .home-section--white
 {
     background-color: var(--white);
-    padding-top: 30px;
     border-radius: 10px;
+    padding-top: 20px;
 }
 
 .home-section:not(:last-child)
@@ -47,4 +47,14 @@
 .home-section__title
 {
     margin-left: 15px;
+    margin-top: 30px;
+}
+
+.stories
+{
+    background-image: url('https://cms.mvideo.ru/magnoliaPublic/dam/jcr:f16e1b5a-e46f-4c3e-95f5-04ebf4f3364e');
+    min-width: 16rem;
+    min-height: 22rem;
+    border-radius: 0.8rem;
+    background-size: cover;
 }
