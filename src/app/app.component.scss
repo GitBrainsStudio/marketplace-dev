@@ -1,0 +1,50 @@
+.widget
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+    min-width: 250px;
+    box-shadow: 0 10px 17px #0000000d;
+    position: relative;
+}
+
+.widget:hover
+{
+    cursor: pointer;
+}
+
+.widget__icon
+{
+    display: inline-flex;
+}
+
+.widget__text
+{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.home-section:not(:first-child)
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.home-section--white
+{
+    background-color: var(--white);
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.home-section:not(:last-child)
+{
+    margin-bottom: 30px;
+}
+
+.home-section__title
+{
+    margin-left: 15px;
+}
