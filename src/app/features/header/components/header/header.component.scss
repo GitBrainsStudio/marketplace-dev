@@ -1,8 +1,6 @@
 .header
 {
-    display: flex;
     background-color: var(--white);
-    flex-direction: column;
 }
 
 .header__navbar
@@ -208,4 +206,20 @@
 .header__carousel
 {
     padding-bottom: 10px;
+}
+
+.widget
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+    min-width: 250px;
+    position: relative;
+}
+
+.header__carousel
+{
+    display: block;
 }
