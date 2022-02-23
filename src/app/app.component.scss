@@ -6,7 +6,6 @@
     border-radius: 10px;
     background-color: var(--white);
     min-width: 250px;
-    box-shadow: 0 10px 17px #0000000d;
     position: relative;
 }
 
@@ -24,12 +23,6 @@
 {
     margin-left: 10px;
     font-size: 14px;
-}
-
-.home-section:not(:first-child)
-{
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .home-section--white

@@ -8,7 +8,6 @@
 .header__navbar
 {
     display: flex;
-    padding: 5px 45px 5px 45px;
 }
 
 .header__navbar--top
@@ -19,7 +18,7 @@
 .navbar__item--top
 {
     color: var(--white);
-    transition: .3s;
+    transition: 0.3s;
     font-size: 14px;
     font-weight: 500;
     display: flex;
@@ -46,11 +45,6 @@
 .header__navbar--middle
 {
     padding: 20px 0 20px 0;
-}
-
-.header__carousel
-{
-    padding: 10px 30px 10px 30px;
 }
 
 .navbar__catalog
@@ -209,4 +203,9 @@
 .contact-phone__text
 {
     margin-left: 5px;
+}
+
+.header__carousel
+{
+    padding-bottom: 10px;
 }

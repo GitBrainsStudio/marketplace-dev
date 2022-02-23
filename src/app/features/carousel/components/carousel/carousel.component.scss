@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    overflow-y: hidden;
 }
 
 .carousel::-webkit-scrollbar {
@@ -20,8 +19,6 @@
     display: flex;
     flex-direction: row;
     overflow: auto;
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
 ::ng-deep .carousel__item:not(:last-child)
@@ -46,14 +43,14 @@
 .carousel__button--right
 {
     position: absolute;
-    right: 0;
+    right: -15px;
     align-items: center;
 }
 
 .carousel__button--left
 {
     position: absolute;
-    left: 0;
+    left: -15px;
     align-items: center;
 }
 
