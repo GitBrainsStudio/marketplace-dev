@@ -1,5 +1,5 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { CarouselImage } from '../../models/carouse-image.model';
+import { Component, Input, OnInit } from '@angular/core';
+import { CarouselImage } from '../../models/carousel-image.model';
 
 @Component({
   selector: 'app-image-carousel',

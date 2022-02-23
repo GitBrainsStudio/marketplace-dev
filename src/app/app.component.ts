@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CarouselImage } from './features/carousel/models/carouse-image.model';
+import { CarouselImage } from './features/carousel/models/carousel-image.model';
 import { IconService } from './features/icon/services/icon.service';
 
 @Component({
