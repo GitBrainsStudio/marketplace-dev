@@ -1,0 +1,36 @@
+.category-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card:hover
+{
+    cursor: pointer;
+}
+
+.category-card__image
+{
+    width: 120px;
+    height: 120px;
+    background-color: var(--gray-sticky);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.category-image
+{
+    width: 100%;
+}
+
+.category-card:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+.category-card__title
+{
+    margin-top: 5px;
+}

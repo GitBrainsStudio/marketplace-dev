@@ -4,12 +4,14 @@ import { MaterialModule } from '../material/material.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselDirective } from './directives/carousel.directive';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
+import { CategoryCarouselComponent } from './components/category-carousel/category-carousel.component';
 
 @NgModule({
   declarations: [
     CarouselComponent,
     CarouselDirective,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    CategoryCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { ImageCarouselComponent } from './components/image-carousel/image-carous
   exports: [
       CarouselComponent,
       CarouselDirective,
-      ImageCarouselComponent
+      ImageCarouselComponent,
+      CategoryCarouselComponent
   ]
 })
 export class CarouselModule { }
