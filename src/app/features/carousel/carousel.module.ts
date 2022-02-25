@@ -5,13 +5,17 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselDirective } from './directives/carousel.directive';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 import { CategoryCarouselComponent } from './components/category-carousel/category-carousel.component';
+import { BrandCarouselComponent } from './components/brand-carousel/brand-carousel.component';
+import { AdvantageCarouselComponent } from './components/advantage-carousel/advantage-carousel.component';
 
 @NgModule({
   declarations: [
     CarouselComponent,
     CarouselDirective,
     ImageCarouselComponent,
-    CategoryCarouselComponent
+    CategoryCarouselComponent,
+    BrandCarouselComponent,
+    AdvantageCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ import { CategoryCarouselComponent } from './components/category-carousel/catego
       CarouselComponent,
       CarouselDirective,
       ImageCarouselComponent,
-      CategoryCarouselComponent
+      CategoryCarouselComponent,
+      BrandCarouselComponent,
+      AdvantageCarouselComponent
   ]
 })
 export class CarouselModule { }

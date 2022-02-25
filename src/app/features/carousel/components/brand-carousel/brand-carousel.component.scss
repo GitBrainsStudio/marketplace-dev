@@ -1,0 +1,31 @@
+.brand-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: var(--gray-sticky);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.brand-card:hover
+{
+    cursor: pointer;
+}
+
+.brand-image
+{
+    width: 100%;
+}
+
+.brand-card:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+.brand-card__title
+{
+    margin-top: 5px;
+}
