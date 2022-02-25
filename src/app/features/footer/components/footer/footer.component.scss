@@ -1,0 +1,68 @@
+.footer
+{
+    background-color: var(--black);
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-section
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-section--bordered
+{
+    border-bottom: 1px var(--box-shadow-light) solid;
+}
+
+.footer-section--row
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__location-button
+{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--black-medium);
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    transition: .8s;
+}
+
+.footer__location-button:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.footer-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title
+{
+    color: var(--white);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-link
+{
+    color: var(--black-light);
+    margin-top: 10px;
+    transition: .8s;
+}
+
+.footer-link:hover
+{
+    cursor: pointer;
+    color: var(--white);
+    transition: .3s;
+}
