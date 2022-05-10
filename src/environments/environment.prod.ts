@@ -2,4 +2,4 @@ export const environment = {
   production: true
 };
 
-export const APP_URL = "http://localhost:4200/"
+export const APP_URL = "https://gitbrainsstudio.github.io/marketplace-dev/"
